@@ -13,7 +13,7 @@ Tested with:
 
   `pip install libpebble2`
 
-3. fing your Pebble Smartwatch Bluetooth Address (with `rfcomm` or from the watch menu)
+3. find your Pebble Smartwatch Bluetooth Address (with `rfcomm` or from the watch menu)
 
 4. save rfcomm bluetooth configuration in `/etc/bluetooth/rfcomm.conf` and replace the `00:00:00:00:00:00` with the actual Pebble BT Address:
   ```
