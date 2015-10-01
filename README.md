@@ -32,3 +32,7 @@ Tested with:
 Right now you've established the connection with the `/dev/rfcomm0` binding and can test the application.
 
 If you press `Ctrl+C` connection will be closed.
+
+## ScreenShots
+![shot1](https://github.com/a-andreyev/sinker/raw/master/harbour/shots/20151001032521.jpg)
+![shot2](https://github.com/a-andreyev/sinker/raw/master/harbour/shots/20151001032855.jpg)
