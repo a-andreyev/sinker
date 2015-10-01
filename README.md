@@ -36,3 +36,26 @@ If you press `Ctrl+C` connection will be closed.
 ## ScreenShots
 ![shot1](https://github.com/a-andreyev/sinker/raw/master/harbour/shots/20151001032521.jpg)
 ![shot2](https://github.com/a-andreyev/sinker/raw/master/harbour/shots/20151001032855.jpg)
+
+## Roadmap
++ ping
++ pebble info
++ phone calls forwarding
++ notifications: messaging (sms an im)
++ notifications: telegram android app
++ notifications: other native apps
++ notifications: other android apps
++ notifications: e-mails
++ notifications: missed calls
++ pebble timeline: jolla timeline
++ bluetooth connection settings
++ cover page
++ tyme sync
++ installed apps management
++ apps store (including watchwaces)
++ profile changing after connection/disconnection
++ pebble connection control
++ messages transliteration
++ about page
++ openrepos package
++ jolla store package
