@@ -31,7 +31,7 @@ CoverBackground {
         id: python
 
         Component.onCompleted: {
-            addImportPath(Qt.resolvedUrl('.'));
+            addImportPath(Qt.resolvedUrl('../py'));
             importModule('coveractions', function () {});
         }
     }

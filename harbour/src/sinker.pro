@@ -21,6 +21,7 @@ OTHER_FILES += qml/sinker.qml \
     qml/cover/coveractions.py \
     qml/pages/FirstPage.qml \
     qml/pages/sinker.py \
+    qml/py/*.py \
     rpm/sinker.changes.in \
     rpm/sinker.spec \
     rpm/sinker.yaml \
@@ -35,5 +36,5 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/sinker-de.ts
+# TRANSLATIONS += translations/sinker-de.ts
 

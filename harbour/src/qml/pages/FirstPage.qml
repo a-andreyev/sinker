@@ -5,37 +5,46 @@ import io.thp.pyotherside 1.4
 Page {
 
     id: page
-    property bool downloading: false
 
-    PageHeader {
-        id: header
-        width: parent.width
-        title: "Sinker"
+    SilicaFlickable {
+        anchors.fill: parent
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Get watchfaces")
+            }
+            MenuItem {
+                text: qsTr("Get Apps")
+            }
+            MenuItem {
+                text: qsTr("My Pebble")
+            }
+        }
+        contentHeight: column.height
+        Column {
+            id: column
+            width: page.width
+            spacing: Theme.paddingLarge
+            PageHeader {
+                title: "Sinker"
+            }
+            Label {
+                x: Theme.paddingLarge
+                text: "Very Alpha"
+                color: Theme.secondaryHighlightColor
+                font.pixelSize: Theme.fontSizeExtraLarge
+            }
+        }
     }
 
-    Label {
-        id: mainLabel
-        anchors.verticalCenter: parent.verticalCenter
-        text: "Unknown Serial Number"
-        visible: !page.downloading
-        anchors.horizontalCenter: parent.horizontalCenter
-    }
 
-    ProgressBar {
-        id: dlprogress
-        label: "Getting..."
-        anchors.verticalCenter: parent.verticalCenter
-        width: parent.width
-        visible: page.downloading
-    }
 
     Button {
-        text: "Get Pebble Serial number"
-        enabled: !page.downloading
+        visible: false
+        text: qsTr("Get Connected Pebble Info")
         anchors.bottom: parent.bottom
         width: parent.width
         onClicked: {
-            python.startDownload();
+            python.getInfo();
         }
     }
 
@@ -43,7 +52,7 @@ Page {
         id: python
 
         Component.onCompleted: {
-            addImportPath(Qt.resolvedUrl('.'));
+            addImportPath(Qt.resolvedUrl('../py'));
 
             setHandler('progress', function(ratio) {
                 dlprogress.value = ratio;
