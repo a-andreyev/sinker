@@ -18,9 +18,7 @@ SOURCES += src/sinker.cpp
 
 OTHER_FILES += qml/sinker.qml \
     qml/cover/CoverPage.qml \
-    qml/cover/coveractions.py \
-    qml/pages/FirstPage.qml \
-    qml/pages/sinker.py \
+    qml/pages/*.qml \
     qml/py/*.py \
     rpm/sinker.changes.in \
     rpm/sinker.spec \

@@ -8,24 +8,13 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        PullDownMenu {
-            MenuItem {
-                text: qsTr("Get watchfaces")
-            }
-            MenuItem {
-                text: qsTr("Get Apps")
-            }
-            MenuItem {
-                text: qsTr("My Pebble")
-            }
-        }
         contentHeight: column.height
         Column {
             id: column
             width: page.width
             spacing: Theme.paddingLarge
             PageHeader {
-                title: "Sinker"
+                title: qsTr("Notifications")
             }
             Label {
                 x: Theme.paddingLarge
@@ -37,9 +26,9 @@ Page {
     }
 
 
+    /*
 
     Button {
-        visible: false
         text: qsTr("Get Connected Pebble Info")
         anchors.bottom: parent.bottom
         width: parent.width
@@ -83,6 +72,7 @@ Page {
             console.log('got message from python: ' + data);
         }
     }
+    */
 }
 
 
