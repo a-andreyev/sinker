@@ -8,51 +8,13 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        PullDownMenu {
-            MenuItem {
-                text: qsTr("Support")
-                onClicked: {
-                    pageStack.push(Qt.resolvedUrl("Support.qml"))
-                }
-            }
-            MenuItem {
-                text: qsTr("Settings")
-                onClicked: {
-                    pageStack.push(Qt.resolvedUrl("Settings.qml"))
-                }
-            }
-            MenuItem {
-                text: qsTr("Watchfaces")
-                onClicked: {
-                    pageStack.push(Qt.resolvedUrl("Watchfaces.qml"))
-                }
-            }
-            MenuItem {
-                text: qsTr("Applications")
-                onClicked: {
-                    pageStack.push(Qt.resolvedUrl("Applications.qml"))
-                }
-            }
-            MenuItem {
-                text: qsTr("Notifications")
-                onClicked: {
-                    pageStack.push(Qt.resolvedUrl("Notifications.qml"))
-                }
-            }
-        }
         contentHeight: column.height
         Column {
             id: column
             width: page.width
             spacing: Theme.paddingLarge
             PageHeader {
-                title: "Sinker"
-            }
-            Label {
-                x: Theme.paddingLarge
-                text: "Very Alpha"
-                color: Theme.secondaryHighlightColor
-                font.pixelSize: Theme.fontSizeExtraLarge
+                title: qsTr("Get Applications")
             }
         }
     }

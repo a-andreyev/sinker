@@ -8,20 +8,22 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        contentHeight: column.height
+        contentHeight: column.height + getAppsButton.height
         Column {
             id: column
             width: page.width
+            height: page.height-getAppsButton.height
             spacing: Theme.paddingLarge
             PageHeader {
-                title: qsTr("My Pebble")
+                title: qsTr("Installed Applications")
             }
-            Label {
-                x: Theme.paddingLarge
-                text: "Very Alpha"
-                color: Theme.secondaryHighlightColor
-                font.pixelSize: Theme.fontSizeExtraLarge
-            }
+        }
+        Button {
+            id: getAppsButton
+            width: parent.width
+            anchors.top: column.bottom
+            text: qsTr("Get Applications")
+            onClicked: pageStack.push("GetApplications.qml")
         }
     }
 

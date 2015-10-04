@@ -2,33 +2,32 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name>GetApps</name>
+    <name>Applications</name>
     <message>
-        <source>Get Apps</source>
+        <source>Installed Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Get Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>GetApplications</name>
+    <message>
+        <source>Get Applications</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>GetWatchfaces</name>
     <message>
-        <source>Get watchfaces</source>
+        <source>Get Watchfaces</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Main</name>
-    <message>
-        <source>Get watchfaces</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Get Apps</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>My Pebble</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>Support</source>
         <translation type="unfinished"></translation>
@@ -41,11 +40,12 @@
         <source>Notifications</source>
         <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>MyPebble</name>
     <message>
-        <source>My Pebble</source>
+        <source>Watchfaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Applications</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -67,6 +67,17 @@
     <name>Support</name>
     <message>
         <source>Support</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Watchfaces</name>
+    <message>
+        <source>Watchfaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Get Watchfaces</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

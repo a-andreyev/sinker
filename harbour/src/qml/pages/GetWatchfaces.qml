@@ -14,13 +14,7 @@ Page {
             width: page.width
             spacing: Theme.paddingLarge
             PageHeader {
-                title: qsTr("Get watchfaces")
-            }
-            Label {
-                x: Theme.paddingLarge
-                text: "Very Alpha"
-                color: Theme.secondaryHighlightColor
-                font.pixelSize: Theme.fontSizeExtraLarge
+                title: qsTr("Get Watchfaces")
             }
         }
     }

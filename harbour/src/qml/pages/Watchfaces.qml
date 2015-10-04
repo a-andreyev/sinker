@@ -8,20 +8,22 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        contentHeight: column.height
+        contentHeight: column.height + getWatchfacesButton.height
         Column {
             id: column
             width: page.width
+            height: page.height-getWatchfacesButton.height
             spacing: Theme.paddingLarge
             PageHeader {
-                title: qsTr("Get Apps")
+                title: qsTr("Watchfaces")
             }
-            Label {
-                x: Theme.paddingLarge
-                text: "Very Alpha"
-                color: Theme.secondaryHighlightColor
-                font.pixelSize: Theme.fontSizeExtraLarge
-            }
+        }
+        Button {
+            id: getWatchfacesButton
+            width: parent.width
+            anchors.top: column.bottom
+            text: qsTr("Get Watchfaces")
+            onClicked: pageStack.push("GetWatchfaces.qml")
         }
     }
 
