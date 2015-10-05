@@ -16,12 +16,64 @@ Page {
             PageHeader {
                 title: qsTr("Settings")
             }
+            // TODO: settings:
             Label {
-                x: Theme.paddingLarge
-                text: "Very Alpha"
-                color: Theme.secondaryHighlightColor
-                font.pixelSize: Theme.fontSizeExtraLarge
+                text: qsTr("General")
+                font.family: Theme.fontFamilyHeading
+                color: Theme.highlightColor
             }
+            Button {
+                width: parent.width
+                text: qsTr("Bluetooth")
+            }
+
+            TextSwitch {
+                text: qsTr("Usage logs")
+                description: qsTr("Send diagnostic data to Pebble")
+                //checked: settings.alwaysSendNotifications
+                automaticCheck: false
+                onClicked: {
+                    // settings.alwaysSendNotifications = !settings.alwaysSendNotifications;
+                }
+            }
+            Button {
+                width: parent.width
+                text: qsTr("Voice Settings")
+            }
+            Label {
+                text: qsTr("Auto App Updates")
+                font.family: Theme.fontFamilyHeading
+                color: Theme.highlightColor
+            }
+            TextSwitch {
+                text: qsTr("Auto-Update via WiFi-Only")
+                description: qsTr("To reduce carrier data charges, don't update apps over mobile networks")
+                //checked: settings.alwaysSendNotifications
+                automaticCheck: false
+                onClicked: {
+                    // settings.alwaysSendNotifications = !settings.alwaysSendNotifications;
+                }
+            }
+            Label {
+                text: qsTr("Developer")
+                font.family: Theme.fontFamilyHeading
+                color: Theme.highlightColor
+            }
+            TextSwitch {
+                text: qsTr("Developer Connection")
+                description: qsTr("Enables developer communication service.")
+                //checked: settings.alwaysSendNotifications
+                automaticCheck: false
+                onClicked: {
+                    // settings.alwaysSendNotifications = !settings.alwaysSendNotifications;
+                }
+            }
+            Label {
+                text: qsTr("About")
+                font.family: Theme.fontFamilyHeading
+                color: Theme.highlightColor
+            }
+            // TODO: about
         }
     }
 

@@ -8,22 +8,23 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        contentHeight: column.height + getWatchfacesButton.height
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Get Watchfaces")
+                onClicked: {
+                    pageStack.push(Qt.resolvedUrl("GetWatchfaces.qml"))
+                }
+            }
+        }
+        contentHeight: column.height
         Column {
             id: column
             width: page.width
-            height: page.height-getWatchfacesButton.height
+            height: page.height
             spacing: Theme.paddingLarge
             PageHeader {
                 title: qsTr("Watchfaces")
             }
-        }
-        Button {
-            id: getWatchfacesButton
-            width: parent.width
-            anchors.top: column.bottom
-            text: qsTr("Get Watchfaces")
-            onClicked: pageStack.push("GetWatchfaces.qml")
         }
     }
 

@@ -55,11 +55,115 @@
         <source>Notifications</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Always send notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Send notifications when phone&apos;s screen is on</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Send 3rd party notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allow 3rd party apps to send notifications to your Pebble</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Phone Notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incoming Calls</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Forward incoming call alerts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SMS Messages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Forward SMS Messages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Other Apps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Responces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Notification responces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Actionable Notifications Setup</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bluetooth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Usage logs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Send diagnostic data to Pebble</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Voice Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Auto App Updates</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Auto-Update via WiFi-Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>To reduce carrier data charges, don&apos;t update apps over mobile networks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Developer Connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enables developer communication service.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

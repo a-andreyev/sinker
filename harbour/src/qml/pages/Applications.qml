@@ -8,22 +8,23 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
-        contentHeight: column.height + getAppsButton.height
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Get Applications")
+                onClicked: {
+                    pageStack.push(Qt.resolvedUrl("GetApplications.qml"))
+                }
+            }
+        }
+        contentHeight: column.height
         Column {
             id: column
             width: page.width
-            height: page.height-getAppsButton.height
+            height: page.height
             spacing: Theme.paddingLarge
             PageHeader {
                 title: qsTr("Installed Applications")
             }
-        }
-        Button {
-            id: getAppsButton
-            width: parent.width
-            anchors.top: column.bottom
-            text: qsTr("Get Applications")
-            onClicked: pageStack.push("GetApplications.qml")
         }
     }
 
