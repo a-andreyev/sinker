@@ -56,6 +56,10 @@ If you press `Ctrl+C` connection will be closed.
 + profile changing after connection/disconnection
 + pebble connection control
 + messages transliteration
++ firmware update
++ language packs support
++ apps support
++ health support
 + about page
 + openrepos package
 + jolla store package
