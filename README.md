@@ -59,7 +59,7 @@ If you press `Ctrl+C` connection will be closed.
 + firmware update
 + language packs support
 + apps support
-+ health support
++ health, weather, calendar, music, notifications, alarms and other built-in apps support
 + about page
 + openrepos package
 + jolla store package
